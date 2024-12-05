@@ -1,0 +1,89 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #1C1C1C
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    padding 20px 0
+    +above($breakpoints.sm)
+      text-align: start
+      padding 40px 0
+    +above($breakpoints.md)
+      padding 70px 0
+    +above($breakpoints.xxl)
+      padding 116px 0 120px
+
+  &__sub-title
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 15px 0 25px
+    +above($breakpoints.md)
+      padding 20px 0 30px
+    +above($breakpoints.xxl)
+      padding 25px 0 40px
+
+  &__bottom
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-end
+      gap: 15px
+    +above($breakpoints.md)
+      gap: 25px
+    +above($breakpoints.xxl)
+      gap: 35px
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    padding 17px 14px
+    border-radius: 8px
+    background-color #242323
+    +above($breakpoints.sm)
+      gap: 5px
+      flex-direction: row
+      flex-wrap: wrap
+      padding 15px
+      width 280px
+    +above($breakpoints.md)
+      border-radius: 13px
+      padding 20px
+      width 360px
+    +above($breakpoints.xxl)
+      padding 24px 23px 23px
+      width 382px
+      height: 267px
+
+  &__bottom-block
+    display: flex
+    align-items: center
+    justify-content center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: column
+      justify-content start
+      gap: 10px
+      margin-bottom 5px
+    +above($breakpoints.md)
+      gap: 17px
+
+  &__bottom-img
+    width 70px
+    height: auto
+    +above($breakpoints.sm)
+      width 110px
+    +above($breakpoints.md)
+      width 150px
+    +above($breakpoints.xxl)
+      width 178px

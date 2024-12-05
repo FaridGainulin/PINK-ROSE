@@ -1,0 +1,89 @@
+.details-section
+  // background-image: url('../images/details-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #0C0C0C
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0
+    color: $color-black-text
+    +above($breakpoints.sm)
+      padding 30px 0 50px
+    +above($breakpoints.md)
+      padding 40px 0 80px
+    +above($breakpoints.xxl)
+      padding 45px 0 127px
+
+  &__title
+    padding 0 0 15px
+    text-align: center
+    +above($breakpoints.sm)
+      padding 0 0 30px
+    +above($breakpoints.md)
+      padding 0 0 50px
+    +above($breakpoints.xxl)
+      padding 0 0 75px
+
+  &__box
+    +above($breakpoints.sm)
+      margin-left 80px
+    +above($breakpoints.sm)
+      margin-left 100px
+    +above($breakpoints.xxl)
+      margin-left 130px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+
+  &__card
+    width 280px !important
+    display: flex
+    align-items: flex-end
+    gap: 5px
+    +above($breakpoints.sm)
+      width max-content !important
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+    & > :nth-child(2)
+      padding-bottom 3px
+      +above($breakpoints.sm)
+        padding-bottom 8px
+      +above($breakpoints.md)
+        padding-bottom 10px
+      +above($breakpoints.xxl)
+        padding-bottom 12px
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    margin-top 20px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content center
+      gap: 10px
+      margin-top 30px
+    +above($breakpoints.md)
+      gap: 15px
+      margin-top 50px
+    +above($breakpoints.xxl)
+      gap: 19px
+      margin-top 67px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 220px !important
+      +above($breakpoints.md)
+        width 260px !important
+      +above($breakpoints.xxl)
+        width 335px !important

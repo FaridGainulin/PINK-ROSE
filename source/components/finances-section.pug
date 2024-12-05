@@ -1,0 +1,61 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-w-h-bold.font-s-36.text-up.color-pink
+        | Франшиза в цифрах
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+              .finances-section__card-inner
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="44" height="44" alt="icon")
+                .font-w-h-regular
+                  .font-s-32-b с 1-го месяца
+                  .font-s-16-b вы начнете <br> получать прибыль
+              .finances-section__card-inner
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="44" height="44" alt="icon")
+                .font-w-h-regular
+                  .font-s-32-b 1 086 000 руб.
+                  .font-s-16-b средняя ежемесячная <br> выручка
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+              .finances-section__card-inner
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="44" height="44" alt="icon")
+                .font-w-h-regular
+                  .font-s-32-b от 1 500 руб.
+                  .font-s-16-b средний чек <br> одного клиента
+              .finances-section__card-inner
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="44" height="44" alt="icon")
+                .font-w-h-regular
+                  .font-s-32-b 32,5%
+                  .font-s-16-b рентабельность <br> по чистой прибыли
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+              .finances-section__card-inner
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="44" height="44" alt="icon")
+                .font-w-h-regular
+                  .font-s-32-b от 27 продаж
+                  .font-s-16-b будет совершаться <br> ежедневно
+              .finances-section__card-inner
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="44" height="44" alt="icon")
+                .font-w-h-regular
+                  .font-s-32-b 353 000 руб.
+                  .font-s-16-b средняя ежемесячная <br> чистая прибыль
+        .bullet-pagination
+      .finances-section__bottom-wrapper
+        .finances-section__bottom
+          img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="830" height="702" alt="image")
+          .font-w-regular.font-s-20
+            | Узнайте, какие инвестиции
+            br
+            | потребуются для старта бизнеса
+          .finances-section__bottom-title.font-w-h-bold.font-s-32-a.text-up
+            | Получите финансовую модель 
+            br
+            | франшизы 
+            span.color-pink PINK ROSE
+          form.finances-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn.btn--secondary(type="submit") ПОЛУЧИТЬ

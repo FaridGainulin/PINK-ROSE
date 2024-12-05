@@ -1,0 +1,89 @@
+.reasons-section
+  // background-image: url('../images/reasons-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #121212
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0
+    text-align: center
+    +above($breakpoints.sm)
+      padding 30px 0
+    +above($breakpoints.md)
+      padding 60px 0 50px
+    +above($breakpoints.xxl)
+      padding 91px 0 69px
+
+  &__title
+    padding 0 0 15px
+    +above($breakpoints.sm)
+      padding 0 0 30px
+    +above($breakpoints.md)
+      padding 0 0 50px
+    +above($breakpoints.xxl)
+      padding 0 0 60px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    padding 15px 5px 20px
+    background-color #fff
+    color: #000
+    border: 2px solid #DC327B
+    border-radius: 10px
+    +above($breakpoints.sm)
+      gap: 15px
+      width 358px !important
+      padding 18px 5px 25px
+    +above($breakpoints.md)
+      border-radius: 16px
+      gap: 20px
+      width: 475px !important;
+      padding 25px 5px 35px
+    +above($breakpoints.xxl)
+      gap: 26px
+      width 580px !important
+      height: 198px
+      padding 30px 5px 42px
+
+  &__bottom
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    +above($breakpoints.sm)
+      margin-top 30px
+      gap: 20px
+    +above($breakpoints.md)
+      margin-top 50px
+      gap: 25px
+    +above($breakpoints.xxl)
+      margin-top 71px
+      gap: 31px
+
+  &__btn
+    width 280px !important
+    +above($breakpoints.sm)
+      width 250px !important
+    +above($breakpoints.md)
+      width 300px !important
+    +above($breakpoints.xxl)
+      width 335px !important

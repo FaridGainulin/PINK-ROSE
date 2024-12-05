@@ -1,0 +1,38 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      h2.about-section__title.font-w-h-bold.font-s-40.text-up
+        | «PINK ROSE»  — франшиза, 
+        br
+        | которую вы искали
+      .about-section__text.font-w-h-regular
+        .font-s-20
+          | Наша команда работает с 2013 года, за это время мы смогли полностью погрузиться в 
+          br.no-br
+          | специфику бизнеса и узнать обо всех нюансах его ведения и развития. Мы 
+          br.no-br
+          | предоставляем партнерам сети готовую бизнес-модель, используя которую, салон 
+          br.no-br
+          | может запустить любой человек, даже без предпринимательского опыта
+        .font-s-20
+          | Уже с первых месяцев работы вы выйдете на стабильную чистую прибыль, продавая 
+          br.no-br
+          | самые свежие, качественные и востребованные цветы и товары
+        .font-s-20
+          | Мы по-настоящему заинтересованы в успешном развитии вашей точки, поэтому 
+          br.no-br
+          | поможем вам дойти до результатов и занять конкурентное место на рынке!
+      .about-section__bottom
+        .about-section__bottom-left
+          img.about-section__logo(src="images/about-section-logo.png" loading="lazy" width="454" height="415" alt="logo")
+          .about-section__bottom-text.font-w-g-medium.font-s-18 Напишите нам!
+          .about-section__bottom-title.font-w-g-semi-bold.font-s-32.text-up
+            | Будем рады ответить 
+            br
+            | на все ваши вопросы!
+        form.about-section__form(data-feedback-form)
+          textarea.input.input--white.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input.input--white(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.input--white(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.btn--black(type="submit") Задать вопрос

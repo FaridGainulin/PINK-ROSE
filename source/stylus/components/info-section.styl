@@ -1,0 +1,102 @@
+.info-section
+  background-image: url('../images/info-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #121212
+  overflow hidden
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 20px
+    +above($breakpoints.sm)
+      padding 40px 0 80px
+    +above($breakpoints.md)
+      padding 60px 0 120px
+    +above($breakpoints.xxl)
+      padding 90px 0 205px
+
+  &__icon
+    position: absolute
+    z-index -1
+    width: 270px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+    +above($breakpoints.sm)
+      width: 650px;
+      bottom: -80px;
+    +above($breakpoints.md)
+      width: 800px;
+      bottom: -70px;
+    +above($breakpoints.xxl)
+      width 1109px
+      bottom: -103px
+
+  &__title,
+  &__bottom-text
+    text-align: center
+
+  &__title
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      padding-bottom 40px
+    +above($breakpoints.md)
+      padding-bottom 50px
+    +above($breakpoints.xxl)
+      padding-bottom 54px
+
+  &__box
+    +above($breakpoints.sm)
+      margin-left 80px
+    +above($breakpoints.md)
+      margin-left 125px
+    +above($breakpoints.xxl)
+      margin-left 130px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+
+  &__card
+    width 280px !important
+    display: flex
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      width max-content !important
+      align-items: flex-end
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card-text
+    padding-bottom 5px
+    +above($breakpoints.sm)
+      padding-bottom 6px
+    +above($breakpoints.md)
+      padding-bottom 8px
+    +above($breakpoints.xxl)
+      padding-bottom 10px
+
+  &__img
+    width: 150px;
+    height: auto;
+    margin: 0 auto 5px;
+    +above($breakpoints.sm)
+      width 250px
+      margin 30px auto 10px
+    +above($breakpoints.md)
+      width 300px
+      margin 60px auto 15px
+    +above($breakpoints.xxl)
+      width 363px
+      margin 86px auto 15px
+
+  &__bottom-text
+    color: #B82967
